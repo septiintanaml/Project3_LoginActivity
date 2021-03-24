@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg4"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="masukkan email"
+        android:gravity="center"
+        android:id="@+id/email"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:ems="5"
+            android:gravity="center"
+            android:hint="masukkan password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#CA936B"
+            android:text="SignUp" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="191dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sudah punya akun?
+            Silahkan login disini"
+            android:textColor="#5A2604" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</LinearLayout>

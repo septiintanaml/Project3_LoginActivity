@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:orientation="vertical"
+    android:background="@drawable/bg4"
+    android:gravity="center">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="masukkan email"
+        android:inputType="textEmailAddress" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="263dp"
+        android:layout_height="271dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:ems="5"
+            android:gravity="center"
+            android:hint="masukkan password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#CA936B"
+            android:text="Sign In" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/cardview_default_elevation">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="remember me"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="    forgot password"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/daftar"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Belum punya akun?"
+            android:textColor="#5A2604"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="daftar disini"
+            android:textStyle="italic"
+            android:textColor="#5A2604" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="By : Septi Intan Amalia_H071191022"
+            android:textSize="10dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

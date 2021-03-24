@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg4"
+    tools:context=".home">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="224dp"
+        android:layout_height="95dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Selamat datang             'Login Activity'"
+        android:textColor="#7A2A2A"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CA936B"
+        android:gravity="center"
+        android:text="logout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By : Septi Intan Amalia_H071191022"
+        android:textColor="#AC7A59"
+        android:textSize="10dp"
+        android:fontFamily="sans-serif-black"/>
+</LinearLayout>
